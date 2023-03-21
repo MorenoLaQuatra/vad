@@ -20,9 +20,9 @@ from vad import EnergyVAD
 
 vad = EnergyVAD(
     sample_rate: int = 16000,
-    frame_length: int = 25,
-    frame_shift: int = 20,
-    energy_threshold: float = 0.05,
+    frame_length: int = 25, # in milliseconds
+    frame_shift: int = 20, # in milliseconds
+    energy_threshold: float = 0.05, # you may need to adjust this value
     pre_emphasis: float = 0.5,
 ) # default values are used here
 
