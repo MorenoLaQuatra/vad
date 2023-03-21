@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+vad/__init__.py
+vad/energy_vad.py
+vad.egg-info/PKG-INFO
+vad.egg-info/SOURCES.txt
+vad.egg-info/dependency_links.txt
+vad.egg-info/requires.txt
+vad.egg-info/top_level.txt
