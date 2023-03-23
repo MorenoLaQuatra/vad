@@ -11,7 +11,7 @@ class EnergyVAD:
         frame_length: int = 25,
         frame_shift: int = 20,
         energy_threshold: float = 0.05,
-        pre_emphasis: float = 0.5,
+        pre_emphasis: float = 0.95,
     ):
         self.sample_rate = sample_rate
         self.frame_length = frame_length
