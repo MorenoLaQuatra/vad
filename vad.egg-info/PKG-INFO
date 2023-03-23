@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: vad
-Version: 1.0
+Version: 1.0.1
 Summary: VAD - Simple Voice Activity Detection
 Home-page: https://github.com/MorenoLaQuatra/vad
 Author: Moreno La Quatra
 Author-email: moreno.laquatra@gmail.com
-Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
@@ -33,9 +33,9 @@ from vad import EnergyVAD
 
 vad = EnergyVAD(
     sample_rate: int = 16000,
-    frame_length: int = 25,
-    frame_shift: int = 20,
-    energy_threshold: float = 0.05,
+    frame_length: int = 25, # in milliseconds
+    frame_shift: int = 20, # in milliseconds
+    energy_threshold: float = 0.05, # you may need to adjust this value
     pre_emphasis: float = 0.5,
 ) # default values are used here
 
@@ -60,4 +60,4 @@ speech_signal = vad.apply_vad(audio)
 
 ## License
 
-This project is licensed under the CC-BY-NC-SA 4.0 license. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

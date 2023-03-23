@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='vad',
-    version='1.0',
+    version='1.0.2',
     description='VAD - Simple Voice Activity Detection',
     py_modules=["EnergyVAD"],
     packages=find_packages(include=['vad', 'vad.*']),

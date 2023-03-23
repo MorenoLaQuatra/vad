@@ -23,7 +23,7 @@ vad = EnergyVAD(
     frame_length: int = 25, # in milliseconds
     frame_shift: int = 20, # in milliseconds
     energy_threshold: float = 0.05, # you may need to adjust this value
-    pre_emphasis: float = 0.5,
+    pre_emphasis: float = 0.95,
 ) # default values are used here
 
 voice_activity = vad(audio) # returns a boolean array indicating whether a frame is speech or not
